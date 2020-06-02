@@ -230,7 +230,7 @@ p {
 	position: relative;
 	color: transparent;
 	animation: text_reveal .5s ease forwards;
-	animation-delay: 1ss;
+	animation-delay: 1s;
 }
 #hero h1:nth-child(1) {
 	animation-delay: 1s;
