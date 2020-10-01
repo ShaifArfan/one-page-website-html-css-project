@@ -24,7 +24,7 @@ img {
 	width: 100%;
 	object-fit: cover;
 }
-p {
+.font-style {
 	color: black;
 	font-size: 1.4rem;
 	margin-top: 5px;
