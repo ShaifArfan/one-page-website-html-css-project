@@ -1,4 +1,5 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+@import 'https://fonts.googleapis.com/css2?family=David+Libre&display=swap';
 * {
 	padding: 0;
 	margin: 0;
@@ -6,7 +7,7 @@
 }
 html {
 	font-size: 10px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'David Libre', serif;
 	scroll-behavior: smooth;
 }
 a {
@@ -36,7 +37,7 @@ p {
 	font-size: 4rem;
 	font-weight: 300;
 	color: black;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
 	text-align: center;
@@ -298,6 +299,11 @@ p {
 	z-index: 1;
 	overflow: hidden;
 }
+
+#services .service-item:hover{
+ transform: scale(1.09);
+
+}
 #services .service-item::after {
 	content: '';
 	position: absolute;
@@ -529,6 +535,32 @@ p {
 	font-size: 1.3rem;
 }
 /* End Footer */
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
+}
 
 /* Keyframes */
 @keyframes hamburger_puls {
