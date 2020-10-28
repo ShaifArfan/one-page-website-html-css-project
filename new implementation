@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- hero section -->
+    <section id="hero">
+        <div class="hero container">
+            <div>
+                <h1>Hello, My Name is Arfan</h1>
+                <a href="#" type="button" class="cta">PORTFOLIO</a>
+
+            </div>
+        </div>
+    </section>
+    <!-- end of hero section -->
+</body>
+
+</html>
