@@ -30,7 +30,7 @@ p {
 	margin-top: 5px;
 	line-height: 2.5rem;
 	font-weight: 300;
-	letter-spacing: .05rem;
+	letter-spacing: 0.05rem;
 }
 .section-title {
 	font-size: 4rem;
@@ -38,7 +38,7 @@ p {
 	color: black;
 	margin-bottom: 10px;
 	text-transform: uppercase;
-	letter-spacing: .2rem;
+	letter-spacing: 0.2rem;
 	text-align: center;
 }
 .section-title span {
@@ -53,9 +53,9 @@ p {
 	border: 2px solid crimson;
 	font-size: 2rem;
 	text-transform: uppercase;
-	letter-spacing: .1rem;
+	letter-spacing: 0.1rem;
 	margin-top: 30px;
-	transition: .3s ease;
+	transition: 0.3s ease;
 	transition-property: background-color, color;
 }
 .cta:hover {
@@ -83,7 +83,7 @@ p {
 #header .header {
 	min-height: 8vh;
 	background-color: rgba(31, 30, 30, 0.24);
-	transition: .3s ease background-color;
+	transition: 0.3s ease background-color;
 }
 #header .nav-bar {
 	display: flex;
@@ -108,7 +108,7 @@ p {
 	align-items: center;
 	z-index: 1;
 	overflow-x: hidden;
-	transition: .5s ease left;
+	transition: 0.5s ease left;
 }
 #header .nav-list ul.active {
 	left: 0%;
@@ -116,7 +116,7 @@ p {
 #header .nav-list ul a {
 	font-size: 2.5rem;
 	font-weight: 500;
-	letter-spacing: .2rem;
+	letter-spacing: 0.2rem;
 	text-decoration: none;
 	color: white;
 	text-transform: uppercase;
@@ -133,7 +133,7 @@ p {
 	font-size: 13rem;
 	letter-spacing: 50px;
 	z-index: -1;
-	transition: .3s ease letter-spacing;
+	transition: 0.3s ease letter-spacing;
 }
 #header .nav-list ul li:hover a::after {
 	transform: translate(-50%, -50%) scale(1);
@@ -154,7 +154,7 @@ p {
 	justify-content: center;
 	z-index: 100;
 	cursor: pointer;
-	transform: scale(.8);
+	transform: scale(0.8);
 	margin-right: 20px;
 }
 #header .hamburger:after {
@@ -181,7 +181,7 @@ p {
 	width: 100%;
 	left: 0;
 	background-color: white;
-	transition: .3s ease;
+	transition: 0.3s ease;
 	transition-property: top, bottom;
 }
 #header .hamburger .bar::after {
@@ -214,7 +214,7 @@ p {
 	height: 100%;
 	width: 100%;
 	background-color: black;
-	opacity: .7;
+	opacity: 0.7;
 	z-index: -1;
 }
 #hero .hero {
@@ -229,7 +229,7 @@ p {
 	font-size: 4rem;
 	position: relative;
 	color: transparent;
-	animation: text_reveal .5s ease forwards;
+	animation: text_reveal 0.5s ease forwards;
 	animation-delay: 1s;
 }
 #hero h1:nth-child(1) {
@@ -239,7 +239,7 @@ p {
 	animation-delay: 2s;
 }
 #hero h1:nth-child(3) {
-	animation: text_reveal_name .5s ease forwards;
+	animation: text_reveal_name 0.5s ease forwards;
 	animation-delay: 3s;
 }
 #hero h1 span {
@@ -250,10 +250,10 @@ p {
 	width: 0;
 	background-color: crimson;
 	animation: text_reveal_box 1s ease;
-	animation-delay: .5s;
+	animation-delay: 0.5s;
 }
 #hero h1:nth-child(1) span {
-	animation-delay: .5s;
+	animation-delay: 0.5s;
 }
 #hero h1:nth-child(2) span {
 	animation-delay: 1.5s;
@@ -306,7 +306,7 @@ p {
 	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: .9;
+	opacity: 0.9;
 	z-index: -1;
 }
 #services .service-bottom .icon {
@@ -389,10 +389,10 @@ p {
 	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	opacity: .7;
+	opacity: 0.7;
 }
 #projects .project-img img {
-	transition: .3s ease transform;
+	transition: 0.3s ease transform;
 }
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
@@ -417,7 +417,7 @@ p {
 #about .col-right h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
-	letter-spacing: .2rem;
+	letter-spacing: 0.2rem;
 	margin-bottom: 10px;
 }
 #about .col-right p {
@@ -452,9 +452,11 @@ p {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
+	width: 90%;
 }
 #contact .contact-items {
-	width: 400px;
+	max-width: 400px;
+	width: 100%;
 }
 #contact .contact-item {
 	width: 80%;
@@ -468,7 +470,7 @@ p {
 	align-items: center;
 	flex-direction: column;
 	box-shadow: 0px 0px 18px 0 #0000002c;
-	transition: .3s ease box-shadow;
+	transition: 0.3s ease box-shadow;
 }
 #contact .contact-item:hover {
 	box-shadow: 0px 0px 5px 0 #0000002c;
@@ -504,7 +506,7 @@ p {
 	color: white;
 	font-weight: 500;
 	font-size: 1.8rem;
-	letter-spacing: .1rem;
+	letter-spacing: 0.1rem;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -519,7 +521,7 @@ p {
 }
 #footer .social-item img {
 	filter: grayscale(1);
-	transition: .3s ease filter;
+	transition: 0.3s ease filter;
 }
 #footer .social-item:hover img {
 	filter: grayscale(0);
