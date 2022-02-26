@@ -1,19 +1,20 @@
-# One page Portfolio Website (HTML CSS Project for Ppractice)
 ![Watch Now](./img/Design.jpg)
-## Watch The Complete Tutorial ![YouTube Video Views](https://img.shields.io/youtube/views/ZFQkb26UD1Y?style=social) : https://youtu.be/ZFQkb26UD1Y   
+# One page Portfolio Website (HTML CSS Project)
+**Watch on YouTube ![YouTube Video Views](https://img.shields.io/youtube/views/ZFQkb26UD1Y?style=social) : https://youtu.be/ZFQkb26UD1Y**
 
+---
 
-This project is for html &amp; css practice. We made this for youtube tutorial purpose.
-<b>coded by [Shaif Arfan](https://github.com/shaifarfan)</b>
+### Made with ❤️ by [Shaif Arfan](https://www.instagram.com/shaifarfan08/)
 
+Like my works and want to support me?
 
-## Similar Projects/turorials
+<a href="https://www.buymeacoffee.com/shaifarfan08" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png" alt="Buy Me A Coffee" style="height: 45px !important;width: 162.75px !important;" ></a>
 
- - [Amy's Portfolio - (html, css project)](https://github.com/ShaifArfan/AMYs-Portfolio)
- - [Ayans's Profolio - (react.js project)](https://github.com/ShaifArfan/AYANs-portfolio)
+---
+
+## Other projects
+
+📚 [All Web Cifar Project Tutorials](https://github.com/ShaifArfan/wc-project-tutorials)
   
-
-### 👍 HAVE FUN 👍
-Thanks, Arfan
 
 
