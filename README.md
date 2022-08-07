@@ -17,6 +17,6 @@ Like my works and want to support me?
 📚 [All Web Cifar Project Tutorials](https://github.com/ShaifArfan/wc-project-tutorials)
   
   
-  #The work is just amazing I like it a lot especially that it is completely responsive!!!
+  #I am learning pull request this is why I am sending you this!!!!Thanks
 
 
