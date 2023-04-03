@@ -288,6 +288,7 @@ p {
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
@@ -313,6 +314,7 @@ p {
 	height: 80px;
 	width: 80px;
 	margin-bottom: 20px;
+	
 }
 #services .service-item h2 {
 	font-size: 2rem;
@@ -322,7 +324,7 @@ p {
 }
 #services .service-item p {
 	color: white;
-	text-align: left;
+	text-align: center;
 }
 /* End Services Section */
 
