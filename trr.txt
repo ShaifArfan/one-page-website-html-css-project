@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cc-project-deployment
+  labels:
+    app: cc-project
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: cc-project
+  template:
+    metadata:
+      labels:
+        app: cc-project
+    spec:
+      containers:
+      - name: cc-project
+        image: yashkaka/yashdockerapp:latest
+        ports:
+        - containerPort: 3000
+
+
+
+
+
+minikube service cc-project-service created — url
+
+
+kubectl port-forward svc/cc-project-deployment 8000:8000 --address 0.0.0.0
+
+
+kubectl expose deployment cc-project-deployment --type=NodePort
+
+kubectl port-forward svc/cc-project-service 3000:3000 --address 0.0.0.0
+
+kubectl run nginx --image=nginx --restart=Never.
+
+kubectl set image deployment/nginx-deployment nginx=nginx:1.0
+kubectl create service nodeport nginx --tcp=80:80
+curl master-node:30386
+# curl node-1:30386
+# curl node-3:30386
+
+kubectl apply -f index-html-configmap.yaml
+kubectl apply -f Service.yaml
+
+minikube service cc-project-service created — url
+
+
+
+
+aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/y8i7n5z0

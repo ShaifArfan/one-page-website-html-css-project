@@ -1,0 +1,36 @@
+@Yashkaka ➜ /workspaces/one-page-website-html-css-project/nginx-image (master) $ docker run -d -p 9090:80 --name webservrer nginx:2.0 
+
+@Yashkaka ➜ /workspaces/one-page-website-html-css-project/nginx-image (master) $ docker build -t nginx:2.0 .
+
+
+kubectl apply -f Deployment.yml
+ mkdir files
+@Yashkaka ➜ /workspaces/one-page-website-html-css-project/nginx-image (master) $ touch .dockerignore
+@Yashkaka ➜ /workspaces/one-page-website-html-css-project/nginx-image (master) $ cd files
+@Yashkaka ➜ /workspaces/one-page-website-html-css-project/nginx-image/files (master) $ cd ..
+@Yashkaka ➜ /workspaces/one-page-website-html-css-project/nginx-image (master) $ docker build -t nginx:1.0 .
+
+ docker rmi -f a7a5c91d840a
+Error response from daemon: conflict: unable to delete a7a5c91d840a (cannot be forced) - image is being used by running container 03a5113043ab
+@Yashkaka ➜ /workspaces/one-page-website-html-css-project/nginx-image (master) $ docker stop 03a5113043ab690bfe12644cd5bb20cd6c9dd6bf220dfd8a1407b81c154a62d6
+03a5113043ab690bfe12644cd5bb20cd6c9dd6bf220dfd8a1407b81c154a62d6
+@Yashkaka ➜ /workspaces/one-page-website-html-css-project/nginx-image (master) $ docker rmi -f a7a5c91d840a
+Untagged: nginx:2.0
+
+docker run -d -p 9090:80 --name webserver nginx:1.0 
+
+
+
+docker tag final:nginx:1.0 new-repo:yashdockerapp
+docker push new-repo:yashdockerapp
+docker push yashkaka/yashdockerapp:final
+
+
+yashdockerapp
+
+
+docker tag ca0163a082bd yashkaka/yashdockerapp:final
+yashkaka/yashdockerapp:final
+
+
+kubectl apply -f nginx-deployment.yaml
