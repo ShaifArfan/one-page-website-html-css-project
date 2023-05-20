@@ -363,6 +363,11 @@ p {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	color: white;
 }
+.aboutme{
+	font-size: 20px;
+	font-weight: 200	;
+
+}
 #projects .project-info h1 {
 	font-size: 4rem;
 	font-weight: 500;
@@ -457,6 +462,14 @@ p {
 #contact .contact-items {
 	/* max-width: 400px; */
 	width: 100%;
+}
+@font-face {
+font-family:'Rajdhani-Medium'	;
+src: url('Rajdhani/Rajdhani-Medium.ttf');
+}
+.Frontenddeveloper{
+	font-size: 30px;
+font-weight: 550;
 }
 #contact .contact-item {
 	width: 80%;
