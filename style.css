@@ -12,11 +12,6 @@ html {
 a {
 	text-decoration: none;
 }
-.recent{
-	display: inline;
-	text-decoration: underline;
-	text-decoration-color:red ;
-}
 .container {
 	min-height: 100vh;
 	width: 100%;
@@ -49,7 +44,15 @@ p {
 .section-title span {
 	color: crimson;
 }
-
+.recent{
+	display: inline;
+	text-decoration: underline;
+	text-decoration-color:red ;
+}
+.black{
+	text-decoration: underline;
+	text-decoration-color: black;
+}
 .cta {
 	display: inline-block;
 	padding: 10px 30px;
