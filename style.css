@@ -44,7 +44,19 @@ p {
 .section-title span {
 	color: crimson;
 }
-
+p{
+	font-size: 14px;
+	font-weight: 600;
+}
+.recent{
+	display: inline;
+	text-decoration: underline;
+	text-decoration-color:red ;
+}
+.black{
+	text-decoration: underline;
+	text-decoration-color: black;
+}
 .cta {
 	display: inline-block;
 	padding: 10px 30px;
@@ -363,6 +375,11 @@ p {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	color: white;
 }
+.aboutme{
+	font-size: 20px;
+	font-weight: 200	;
+
+}
 #projects .project-info h1 {
 	font-size: 4rem;
 	font-weight: 500;
@@ -457,6 +474,11 @@ p {
 #contact .contact-items {
 	/* max-width: 400px; */
 	width: 100%;
+}
+
+.Frontenddeveloper{
+	font-size: 30px;
+font-weight: 550;
 }
 #contact .contact-item {
 	width: 80%;
