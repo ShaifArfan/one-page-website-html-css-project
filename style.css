@@ -471,10 +471,7 @@ p {
 	/* max-width: 400px; */
 	width: 100%;
 }
-@font-face {
-font-family:'Rajdhani-Medium'	;
-src: url('Rajdhani/Rajdhani-Medium.ttf');
-}
+
 .Frontenddeveloper{
 	font-size: 30px;
 font-weight: 550;
