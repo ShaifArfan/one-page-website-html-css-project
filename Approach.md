@@ -1,11 +1,11 @@
 * You need to document your approach in a `.md` file explaining your thought process and how / why you choose a certain tool while solving this problem.
 * A GitHub repository which contains your code  along with a `.md` file containing your thought process would be the end product that we are expecting.
-*Story:
+* Story:
 At first I was unable to find any kind of bug at first but then I realized that it can make it more impressive.
 
 Then I have changed few lines using HTML and CSS (in which I was good enough)
 
-*CHANGE
+* CHANGE:
 
 1.)I have created two divisions to underline two different words of a same line in different colours(Used at RECENT PROJECTS).Then made the display property of the first division to inline.As it would look more attractive.
 Then added text-decoration as underlineline and text-decoration-color was also changed accordingly.
