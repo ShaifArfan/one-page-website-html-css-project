@@ -12,6 +12,11 @@ html {
 a {
 	text-decoration: none;
 }
+.recent{
+	display: inline;
+	text-decoration: underline;
+	text-decoration-color:red ;
+}
 .container {
 	min-height: 100vh;
 	width: 100%;
