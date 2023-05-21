@@ -1,3 +1,5 @@
+* You need to document your approach in a `.md` file explaining your thought process and how / why you choose a certain tool while solving this problem.
+* A GitHub repository which contains your code  along with a `.md` file containing your thought process would be the end product that we are expecting.
 Story:
 At first I was unable to find any kind of bug at first but then I realized that it can make it more impressive.
 
