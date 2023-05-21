@@ -44,6 +44,10 @@ p {
 .section-title span {
 	color: crimson;
 }
+p{
+	font-size: 14px;
+	font-weight: bold;
+}
 .recent{
 	display: inline;
 	text-decoration: underline;
