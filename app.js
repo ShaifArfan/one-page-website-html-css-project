@@ -2,7 +2,8 @@ const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger'
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
 const header = document.querySelector('.header.container');
-
+let buttonOfuP = document.getElementById('buttonOfuP')
+let date = document.getElementById('date')
 
 
 
@@ -30,7 +31,6 @@ menu_item.forEach((item) => {
 
 window.addEventListener("DOMContentLoaded",
 	function () {
-		let buttonOfuP = document.getElementById('buttonOfuP')
 		document.addEventListener('scroll', () => {
 			if (window.scrollY == 0)
 				buttonOfuP.classList.add("hideButtonOfuP")
@@ -43,5 +43,8 @@ window.addEventListener("DOMContentLoaded",
 	});
 
 
-
+window.addEventListener('DOMContentLoaded', () => {
+	newDate = new Date
+	date.innerText = newDate.getFullYear() 
+})
 
