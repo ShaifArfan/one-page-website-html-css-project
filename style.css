@@ -198,6 +198,18 @@ p {
 }
 /* End Header section */
 
+/* add my photo */
+#myPhoto{
+	position: fixed;
+    height: 60px;
+    width: 41px;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    padding-right: 6px;
+}
+/* and small photo*/
+
 /* Hero Section */
 #hero {
 	background-image: url(./img/hero-bg.png);
