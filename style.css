@@ -701,3 +701,18 @@ p {
 	}
 }
 /* End  Media Query For Desktop */
+
+/* Button for go up */
+#buttonOfuP{
+	height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+	z-index: 100;
+}
+
+.hideButtonOfuP{
+	visibility: hidden;
+}
+/* Buttan for go up */
