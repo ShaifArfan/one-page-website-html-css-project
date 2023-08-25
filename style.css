@@ -442,13 +442,13 @@ svg circle:nth-child(2) {
   stroke: #ffe341;
 }
 .card:nth-child(6) svg circle:nth-child(2) {
-	stroke-dashoffset: calc(440 - (440 * 60) / 100);
-	stroke: #ec5a8b;
-  }
-  .card:nth-child(7) svg circle:nth-child(2) {
-	stroke-dashoffset: calc(440 - (440 * 80) / 100);
-	stroke: #41ffb0;
-  }
+  stroke-dashoffset: calc(440 - (440 * 60) / 100);
+  stroke: #ec5a8b;
+}
+.card:nth-child(7) svg circle:nth-child(2) {
+  stroke-dashoffset: calc(440 - (440 * 80) / 100);
+  stroke: #41ffb0;
+}
 
 /* End Services Section */
 
@@ -523,6 +523,29 @@ svg circle:nth-child(2) {
 #projects .project-item:hover .project-img img {
   transform: scale(1.1);
 }
+
+.project-1-button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 10px;
+  padding: 14px 24px;
+  border: none;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s,
+    -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s;
+  background: linear-gradient(
+    to right,
+    rgb(230, 30, 77) 0%,
+    rgb(227, 28, 95) 50%,
+    rgb(215, 4, 102) 100%
+  );
+  color: #fff;
+}
+
 /* End Projects section */
 
 /* About Section */
