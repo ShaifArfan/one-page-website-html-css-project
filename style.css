@@ -1,4 +1,24 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+
+/* -------------------------------------------------------- */
+/* Outline */
+
+/* 1- General styles */
+/* 2- Private styles */
+	/* Header */
+	/* Hero */
+	/* Services */
+	/* Projects */
+	/* About */
+	/* Contact */
+	/* Footer */
+/* 3- Key Frames (Animations) */
+/* 4- Media Query For Tablet */
+/* 5- Media Query For Desktop */
+/* 6- Media Query For Mobile */
+/* -------------------------------------------------------- */
+
+/* General styles */
 * {
 	padding: 0;
 	margin: 0;
@@ -24,6 +44,9 @@ img {
 	width: 100%;
 	object-fit: cover;
 }
+
+/* -------------------------------------------------------- */
+
 p {
 	color: black;
 	font-size: 1.4rem;
@@ -33,7 +56,7 @@ p {
 	letter-spacing: 0.05rem;
 }
 .section-title {
-	font-size: 4rem;
+	font-size: 2rem;
 	font-weight: 300;
 	color: black;
 	margin-bottom: 10px;
@@ -44,23 +67,24 @@ p {
 .section-title span {
 	color: crimson;
 }
-
 .cta {
 	display: inline-block;
 	padding: 10px 30px;
 	color: white;
 	background-color: transparent;
-	border: 2px solid crimson;
+	border: 2px solid white;
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 	margin-top: 30px;
-	transition: 0.3s ease;
-	transition-property: background-color, color;
+	transition: background-color 0.3s ease,
+				color 0.3s ease,
+				border 0.3s ease;
 }
 .cta:hover {
 	color: white;
 	background-color: crimson;
+	border: 2px solid crimson;
 }
 .brand h1 {
 	font-size: 3rem;
@@ -72,7 +96,7 @@ p {
 }
 
 /* Header section */
-#header {
+header {
 	position: fixed;
 	z-index: 1000;
 	left: 0;
@@ -80,12 +104,12 @@ p {
 	width: 100vw;
 	height: auto;
 }
-#header .header {
+header .header {
 	min-height: 8vh;
-	background-color: rgba(31, 30, 30, 0.24);
+	background-color: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	transition: 0.3s ease background-color;
 }
-#header .nav-bar {
+header .nav-bar {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -94,7 +118,7 @@ p {
 	max-width: 1300px;
 	padding: 0 10px;
 }
-#header .nav-list ul {
+header .nav-list ul {
 	list-style: none;
 	position: absolute;
 	background-color: rgb(31, 30, 30);
@@ -110,10 +134,13 @@ p {
 	overflow-x: hidden;
 	transition: 0.5s ease left;
 }
-#header .nav-list ul.active {
+header .nav-list ul.active {
 	left: 0%;
 }
-#header .nav-list ul a {
+header .nav-list ul li{
+	transition: color 0.3s ease;
+}
+header .nav-list ul a {
 	font-size: 2.5rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
@@ -123,7 +150,7 @@ p {
 	padding: 20px;
 	display: block;
 }
-#header .nav-list ul a::after {
+header .nav-list ul a::after {
 	content: attr(data-after);
 	position: absolute;
 	top: 50%;
@@ -135,14 +162,14 @@ p {
 	z-index: -1;
 	transition: 0.3s ease letter-spacing;
 }
-#header .nav-list ul li:hover a::after {
+header .nav-list ul li:hover a::after {
 	transform: translate(-50%, -50%) scale(1);
 	letter-spacing: initial;
 }
-#header .nav-list ul li:hover a {
+header .nav-list ul li:hover a {
 	color: crimson;
 }
-#header .hamburger {
+header .hamburger {
 	height: 60px;
 	width: 60px;
 	display: inline-block;
@@ -157,7 +184,7 @@ p {
 	transform: scale(0.8);
 	margin-right: 20px;
 }
-#header .hamburger:after {
+header .hamburger:after {
 	position: absolute;
 	content: '';
 	height: 100%;
@@ -166,15 +193,15 @@ p {
 	border: 3px solid white;
 	animation: hamburger_puls 1s ease infinite;
 }
-#header .hamburger .bar {
+header .hamburger .bar {
 	height: 2px;
 	width: 30px;
 	position: relative;
 	background-color: white;
 	z-index: -1;
 }
-#header .hamburger .bar::after,
-#header .hamburger .bar::before {
+header .hamburger .bar::after,
+header .hamburger .bar::before {
 	content: '';
 	position: absolute;
 	height: 100%;
@@ -184,19 +211,19 @@ p {
 	transition: 0.3s ease;
 	transition-property: top, bottom;
 }
-#header .hamburger .bar::after {
+header .hamburger .bar::after {
 	top: 8px;
 }
-#header .hamburger .bar::before {
+header .hamburger .bar::before {
 	bottom: 8px;
 }
-#header .hamburger.active .bar::before {
+header .hamburger.active .bar::before {
 	bottom: 0;
 }
-#header .hamburger.active .bar::after {
+header .hamburger.active .bar::after {
 	top: 0;
 }
-/* End Header section */
+/* Header section End */
 
 /* Hero Section */
 #hero {
@@ -218,10 +245,10 @@ p {
 	z-index: -1;
 }
 #hero .hero {
-	max-width: 1200px;
+	max-width: 100%;
 	margin: 0 auto;
-	padding: 0 50px;
 	justify-content: flex-start;
+	padding:  0 0 0 30px;
 }
 #hero h1 {
 	display: block;
@@ -261,8 +288,7 @@ p {
 #hero h1:nth-child(3) span {
 	animation-delay: 2.5s;
 }
-
-/* End Hero Section */
+/* Hero Section End */
 
 /* Services Section */
 #services .services {
@@ -270,10 +296,10 @@ p {
 	text-align: center;
 	max-width: 1500px;
 	margin: 0 auto;
-	padding: 100px 0;
+	padding: 100px 0 0 0;
 }
 #services .service-top {
-	max-width: 500px;
+	max-width: 700px;
 	margin: 0 auto;
 }
 #services .service-bottom {
@@ -323,15 +349,16 @@ p {
 #services .service-item p {
 	color: white;
 	text-align: left;
+	width: 80%;
 }
-/* End Services Section */
+/* Services Section End */
 
 /* Projects section */
 #projects .projects {
 	flex-direction: column;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 100px 0;
+	padding: 100px 0 0 0;
 }
 #projects .projects-header h1 {
 	margin-bottom: 50px;
@@ -397,7 +424,7 @@ p {
 #projects .project-item:hover .project-img img {
 	transform: scale(1.1);
 }
-/* End Projects section */
+/* Projects section End */
 
 /* About Section */
 #about .about {
@@ -405,7 +432,7 @@ p {
 	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
-	padding: 100px 20px;
+	padding: 100px 20px 0 0;
 }
 #about .col-left {
 	width: 250px;
@@ -425,9 +452,15 @@ p {
 }
 #about .col-right .cta {
 	color: black;
-	margin-bottom: 50px;
-	padding: 10px 20px;
 	font-size: 2rem;
+	border: 2px solid black;
+	border-radius: 5px;
+	transition: background-color 0.3s ease,
+				border 0.3s ease;
+}
+#about .col-right .cta:hover{
+	border: 2px solid crimson;
+	color: white;
 }
 #about .col-left .about-img {
 	height: 100%;
@@ -445,7 +478,7 @@ p {
 	border: 7px solid crimson;
 	z-index: -1;
 }
-/* End About Section */
+/* About Section End */
 
 /* contact Section */
 #contact .contact {
@@ -513,6 +546,7 @@ p {
 #footer .social-icon {
 	display: flex;
 	margin-bottom: 30px;
+	gap: 50px;
 }
 #footer .social-item {
 	height: 50px;
@@ -531,6 +565,8 @@ p {
 	font-size: 1.3rem;
 }
 /* End Footer */
+
+/* -------------------------------------------------------- */
 
 /* Keyframes */
 @keyframes hamburger_puls {
@@ -566,6 +602,8 @@ p {
 }
 /* End Keyframes */
 
+/* -------------------------------------------------------- */
+
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
 	.cta {
@@ -576,18 +614,24 @@ p {
 		font-size: 6rem;
 	}
 
+	/* Header */
+	.header{
+		padding: 10px;
+	}
+	/* Header End */
+
 	/* Hero */
 	#hero h1 {
 		font-size: 7rem;
 	}
-	/* End Hero */
+	/* Hero End */
 
 	/* Services Section */
 	#services .service-bottom .service-item {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
-	/* End Services Section */
+	/* Services Section End */
 
 	/* Project */
 	#projects .project-item {
@@ -608,7 +652,7 @@ p {
 	#projects .all-projects .project-img {
 		height: 100%;
 	}
-	/* End Project */
+	/* Project End */
 
 	/* About */
 	#about .about {
@@ -633,15 +677,16 @@ p {
 	#about .col-right h1 {
 		text-align: left;
 	}
-	/* End About */
+	/* About End */
 
-	/* contact  */
+	/* Contact */
 	#contact .contact {
 		flex-direction: column;
 		padding: 100px 0;
 		align-items: center;
 		justify-content: center;
 		min-width: 20vh;
+		gap: 80px;
 	}
 	#contact .contact-items {
 		width: 100%;
@@ -649,11 +694,13 @@ p {
 		flex-direction: row;
 		justify-content: space-evenly;
 		margin: 0;
+		gap: 30px;
 	}
 	#contact .contact-item {
 		width: 30%;
 		margin: 0;
 		flex-direction: row;
+		border: 1px solid lightgray;
 	}
 	#contact .contact-item .icon {
 		height: 100px;
@@ -667,37 +714,88 @@ p {
 		text-align: left;
 		padding-left: 20px;
 	}
-	/* End contact  */
+	/* Contact End */
+
+	/* Footer */
+	.footer{
+		gap: 15px;
+	}
+
+	.social-item a img{
+		width: 50px;
+		height: 50px;
+	}
 }
-/* End Media Query For Tablet */
+/* Media Query For Tablet End */
+
+/* -------------------------------------------------------- */
 
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
-	/* header */
-	#header .hamburger {
+	/* Header */
+	header .hamburger {
 		display: none;
 	}
-	#header .nav-list ul {
+	header .nav-list ul {
 		position: initial;
 		display: block;
 		height: auto;
 		width: fit-content;
 		background-color: transparent;
 	}
-	#header .nav-list ul li {
+	header .nav-list ul li {
 		display: inline-block;
 	}
-	#header .nav-list ul li a {
+	header .nav-list ul li a {
 		font-size: 1.8rem;
 	}
-	#header .nav-list ul a:after {
+	header .nav-list ul a:after {
 		display: none;
 	}
-	/* End header */
+	/* Header End */
 
 	#services .service-bottom .service-item {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
 }
-/* End  Media Query For Desktop */
+/* Media Query For Desktop End */
+
+/* -------------------------------------------------------- */
+
+/* Media Query for Mobile */
+@media (max-width: 768px){
+	header{
+		padding: 20px 25px;
+	}
+	.section-title{
+		font-size: 32px;
+	}
+	.service-top{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.service-top p{
+		width: 80%;
+	}
+	#about{
+		margin-bottom: 100px;
+	}
+	.col-right{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.col-right p{
+		width: 80%;
+	}
+	.col-right a{
+		margin-bottom: 25px;
+	}
+	.contact-items{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
